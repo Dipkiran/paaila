@@ -1,0 +1,38 @@
+.fa-times, .fa-plus{
+  float:right;
+}
+
+.question-answer{
+  padding: calc(0vh + 0.5em) 0;
+  border-bottom: 1px solid #EEE;
+  display: none;
+  text-align: left;
+}
+
+.question-answer:first-child{
+  border-top: 1px solid #EEE;
+}
+
+/*answer*/
+.question-answer p,
+.answer
+{
+  text-align: left;
+  padding: calc(0.5vh + 0.5em) 0;
+  display: none;
+  font-family: 'Cardo', serif;
+}
+
+.question-answer .fa-plus{
+  display: none;
+}
+
+.faqq .fa-angle-up{
+  display: none;
+}
+
+/*Question*/
+.question-answer h3{
+  margin-bottom: calc(0.5vh + 0.5em);
+  font-weight: bold;
+}

@@ -1,0 +1,16 @@
+.specs img{
+  height: 80px;
+  width:auto;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.specs{
+  text-align: center;
+  border: 1px solid white;
+  padding: 30px 10px;
+}
+
+.specs h4, .specs p{
+  text-align: center;
+}

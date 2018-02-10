@@ -1,0 +1,170 @@
+/* Common CSS (Place this css only once) */
+body{background:#fff;}
+a:hover{text-decoration: none;}
+li{list-style: none;}
+
+
+.myblog{z-index:999;width:100%;margin: 0;min-height:60px;background: #fff;border-radius: 0px;border:none; box-shadow:0 3px 6px rgba(30, 62, 240, 0.52);}
+.myblog li > a{font-weight: 600; font-size: 16px;color: #1d2c2c;position: relative;line-height: 0;line-height: 30px;}
+.myblog li > a > span{position: absolute;right: -13px;top: 14px;background: #ff777c;color: #fff;border-radius: 50%;width: 20px;line-height: normal;text-align: center;font-size: 9px;padding-top: 2%;}
+.myblog .nav>li>a{border-bottom: 2px solid transparent;}
+.myblog .nav>li>a:focus, .myblog .nav>li>a:hover{background: none;border-bottom: 2px solid #d23cc0;color: #471adb;}
+.myblog .navbar-nav>li>a{padding: 3% 10%;margin: 3% 20%;}
+#myblog-container{overflow-x: hidden;background: #fff;border-top:1px solid #d5d0d0;}
+.myblog .navbar-brand{height: 60px;padding: 15px;padding-bottom:0;padding-top: 9px;border-right: 1px solid #d5d0d0;text-align: center;}
+.myblog .navbar-brand span{font-size: 7px;color: #d23cc0;font-weight: 600;position: relative;top: -4px;display: block;}
+.myblog .navbar-brand img{margin-left: 50%;transform: translateX(-50%);}
+.navbar-toggle .icon-bar{background: #d23cc0;}
+.navbar-toggle{float:left;}
+
+.myblog .btn-univhub{padding: 4px 22px;margin: 0 5px;margin-top: 14px;}
+
+.navbar-nav>li>.dropdown-menu{margin-top: 10px;border-radius: 0px;}
+
+
+.classicfont {
+    font-family: "Tangerine", serif;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 1%;
+}
+
+.login-but a{  font-size: 16px; color:#1d2c2c;}
+.login-but a:hover{  background: none;border-bottom: 2px solid #d23cc0;color: #471adb;}
+
+
+footer .footer-address i{font-size: 22px;margin-right: 10px;float: left;}
+footer .footer-address ul{padding: 0;}
+footer .footer-address li{margin-bottom: 13px;}
+footer .footer-title{font-size: 19px;font-weight: 600;display: block;margin-bottom: 10px;}
+footer .footer-connect i{font-size: 33px;display: inline-block;margin: 5px;cursor: pointer;color: #494747;}
+footer .footer-connect i:hover{color: #471adb;}
+footer .footer-connect input{height: 33px;line-height: 33px;border:1px solid transparent;padding: 10px;margin-bottom: 10px;}
+footer .footer-connect input:focus{box-shadow: none;outline: 0;border:1px solid #1abc9c;}
+footer .footer-connect .btn-univhub{border-radius: 0px;}
+footer .footer-connect form{margin-top: 20px;}
+@media screen and (max-width:480px){
+    footer .footer-title{margin-top: 10px;}
+}
+/* Footer */
+.form-title{
+  padding: 1% 1%;
+  width: 50%;
+  margin-left: 3%;
+  font-size: 14px;
+
+}
+.form-textarea{
+  width: 50%;
+
+  padding: 1% 1%;
+  font-size: 14px;
+}
+.form-text{
+  font-size: 22px;
+}
+
+@media screen and (max-width:480px){
+    .form-textarea{width: 80%;}
+}
+
+
+h2{
+  color:green;
+}
+
+.post{
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.list-image{
+  float:left;
+  padding: 1% 1%;
+}
+.list-image img{
+  border-radius: 7%;
+  height: 200px;
+  width: 350px;
+}
+
+.list-text{
+  font-size: 28px;
+}
+
+
+.fixed-div{
+  float:left;
+  width: 100%;
+  margin-bottom: 3%;
+}
+.list-content {
+  font-size: 14px;
+}
+.continue{
+  font-size: 14px;
+}
+
+a{
+  color: #352929;
+}
+@media screen and (max-width:540px){
+    .list-image{width: 100%;}
+}
+
+.details{
+  padding: 3% 5%;
+}
+
+.detail-image img{
+  width: 80%;
+}
+.detail-text h3{
+  font-size: 28px;
+  padding: 1%;
+  width: 80%;
+}
+
+.detail-content{
+  font-size: 14px;
+  width: 80%;
+  padding: 1%;
+}
+
+.author-text{
+  font-size: 14px;
+  width: 80%;
+    padding: 1%;
+}
+
+.submit-but{
+  float:left;
+}
+
+.list-items{
+  margin-top: 8%;
+}
+
+.messages{
+  margin: 1% 2%;
+  font-size: 14px;
+}
+
+.logo{
+  height: 80px;
+  width:131px;
+}
+
+.contains{
+  margin-top: 5%;
+
+}
+@media screen and (max-width:540px){
+    .contains{margin-top: 25%;}
+}
+
+.post-list{
+  border-bottom: 1px solid white;
+}
+.pagination{
+  margin-left: 40%;
+}

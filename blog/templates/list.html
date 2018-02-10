@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<div class="col-sm-10 col-sm-offset-1 contains">
+  <h2></h2>
+  <!-- <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <form method='GET' action="" class="search-form">
+                <div class="form-group has-feedback">
+            		<label for="search" class="sr-only">Search</label>
+            		<input type="text" class="form-control" name="q" placeholder="search" value='{{ request.GET.q }}'>
+                <button type="submit" class="submit-but"><i class="glyphicon glyphicon-search"></i></button>
+            	</div>
+            </form>
+        </div>
+    </div> -->
+  <div class="col-md-4 col-md-offset-3">
+    <form class="search-form" role="search">
+    <div class="input-group add-on">
+      <input class="form-control" type="text" class="form-control" name="q" placeholder="search" value='{{ request.GET.q }}'>
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div class="list-items">
+  {% for obj in object_list %}
+
+
+  <div class="col-sm-12 post-list">
+  <div class="fixed-div">
+    {% if obj.image %}
+    <div class="list-image">
+      <a href='{{ obj.get_absolute_url }}'><img src= '{{ obj.image.url }}' class="img-responsive" /></a>
+      </div>
+    {% endif %}
+
+    <div class="list-text"><h3><a href='{{ obj.get_absolute_url }}'>{{ obj.title|title }}</a><small> {{ obj.published_Date|timesince }} ago</small></h3></div>
+    <div class="author-text">
+      {% if obj.user.get_full_name %}
+        <I>Author: {{ obj.user.get_full_name }}</I>
+      {% endif %}
+
+    </div>
+    <div class="list-content"><p>{{ obj.content| linebreaks | truncatechars:100 }}</p></div>
+    <a href='{{ obj.get_absolute_url }}' class="continue">Continue Reading</a>
+
+  </div>
+  </div>
+    <hr>
+
+  {% endfor %}
+</div>
+
+
+<div class="pagination">
+      <span class="step-links">
+        
+          {% if object_list.has_previous %}
+              <a href="?{page_req_var}=1{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">&laquo; first</a>
+              <a href="?{{page_req_var}}={{ object_list.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">previous</a>
+          {% endif %}
+
+          <span class="current">
+              Page {{ object_list.number }} of {{ object_list.paginator.num_pages }}.
+          </span>
+
+          {% if object_list.has_next %}
+              <a href="?{{page_req_var}}={{ object_list.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">next</a>
+              <a href="?{{page_req_var}}={{ object_list.paginator.num_pages }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">last &raquo;</a>
+          {% endif %}
+      </span>
+  </div>
+  </div>
+{% endblock %}

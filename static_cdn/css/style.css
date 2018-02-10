@@ -1,0 +1,159 @@
+.navbar-header a{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,h2,h3{
+font-family: 'Raleway', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+
+font-family: 'Boogaloo', cursive;
+/*font-family: 'Baloo', cursive;*/
+font-family: 'Dosis', sans-serif;
+}
+
+a{
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+p{
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+}
+
+.text{
+  font-family: 'EB Garamond', serif;
+}
+
+
+.subtitle, #caption {
+  font-family: 'Rubik', sans-serif;
+}
+
+/*Feature styling*/
+.feature h2{
+  margin: 25px 0;
+  padding:0 calc(1em + 0.75vh) 0 calc(0.5em + 0.75vh);
+}
+
+.feature p{
+  text-align:left;
+  padding:0 calc(1em + 0.75vh) 0 calc(0.5em + 0.75vh);
+}
+
+.feature{
+  padding: 15px 10px;
+  color: #444;
+    margin-bottom: 2vh;
+}
+
+.feature:hover{
+  color: #000;
+  transition: color 0.5s ease;
+}
+
+hr{
+border-top:1px solid #DBDBDB;
+}
+
+.hero-image{
+  margin-top: 50px;
+  height: 580px;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-color: black;
+}
+
+/*a white box with text*/
+.text-card{
+  box-shadow: 0px 0px 0px rgba(0,0,0,1), 0px 0 10px rgba(0,0,0,0.24);
+}
+
+.text-card .container{
+    padding:10vh 6vh;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 0px 8px rgba(0,0,0,0.24);
+    text-align:center;margin-top:-60px;background:white;
+}
+
+.text-card h1{
+    padding:0 0 2vh 0;
+}
+
+.text-card p{
+  text-align: left;
+}
+
+
+
+@media screen and (max-width: 670px){
+    .col-md-4, .col-md-6{
+      padding:0 0 30px 0;
+      margin: 0;
+    }
+
+    .col-md-4 .img, .col-md-6 .img{
+      margin:0;
+      padding: 0;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+
+  .text-card .container{
+      padding:2vh 1vh;
+      margin: 0;
+  }
+
+  .text-card p{
+    font-size: 16px;
+}
+
+
+
+}
+
+/*Robot intro font size styling*/
+    @media screen and (max-width: 1200px){
+        #hero-intro, #hero-intro a{
+            font-size: 50px !important;
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+        #hero-intro, #hero-intro a{
+            font-size: 40px !important;
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        #hero-intro, #hero-intro a{
+            font-size: 30px !important;
+        }
+    }
+
+    /*Font styling for titles across Paaila */
+    .title{
+        margin:1.2vh 0px 3vh 0;
+        text-align:center;
+    }
+
+    .subtitle{
+        font-size: 20px;
+        text-align: center;
+    }
+
+/*General Font styling*/
+@media screen and (max-width: 670px){
+    p, .text{
+        font-size: 18px;
+    }
+
+    .subtitle{
+        font-size: 16px;
+    }
+
+    h2, .feature h2{
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,53 @@
+
+.client .image{
+  /*margin-bottom: 10px;*/
+  padding: 20px 0;
+}
+
+.image:hover{
+  float: left;
+  background: #F5F5F5;
+  transition: background 0.5s ease;
+}
+
+.client img{
+  padding-bottom: 30px;
+  margin: 0 auto;
+  height: 160px;
+  width: auto;
+}
+
+.client p{
+  padding-top:12px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.client p a{
+  text-decoration: none;
+  color: #666;
+}
+
+.client-text{
+  height: 50px;
+  text-align: center;
+  color: black;
+}
+
+/*client-text styling*/
+.award{
+  cursor: pointer;
+}
+
+.award-text{
+  display: none;
+}
+
+.blank p, .blank a{
+  font-size: 17px;
+}
+
+#quoteby{
+  font-size: 16px;
+  color: #666;
+}

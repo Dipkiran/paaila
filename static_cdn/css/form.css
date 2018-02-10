@@ -1,0 +1,67 @@
+form{
+  max-width: 500px;
+}
+
+textarea, input[type=text],
+input[type=tel],
+ input[type=textarea],input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-width: 0 0 1px 0;
+    border-color: #EEE;
+    border-style: solid;
+    border-radius: 0px;
+    box-sizing: border-box;
+    resize: none;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 15px;
+  }
+
+
+input[type=file]{
+    height: auto;
+    padding: 10px 0;
+}
+input:focus {
+    border-color: orange;
+    border-style: solid;
+    border-radius: 0px;
+    box-sizing: border-box;
+    resize: none;
+    transition: border 0.9s ease;
+}
+
+
+textarea
+{
+  height: 150px;
+}
+
+textarea:focus
+{
+  transition: border 0.9s ease;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: orange;
+}
+
+
+input[type=submit] {
+    height: 40px;
+    width: auto;
+    padding: 10px 20px;
+    color: black;
+    background: inherit;
+    margin: 30px auto 20px auto;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+input[type=submit]:hover {
+  transition: color 0.5s ease;
+  transition: background 0.5s ease;
+  color:white;
+  background: black;
+}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block head_title %}
+{{ instance.title }} | {{ block.super }}
+{% endblock head_title %}
+{% block content %}
+
+<div class="col-sm-10 col-sm-offset-2">
+  <div class="details">
+    <div class="detail-image">
+      {% if instance.image %}<img src= '{{ instance.image.url }}' class="img-responsive" /></div>{% endif %}
+    <div class="detail-text"><h3>{{ title | title }}<small> {{ instance.published_Date }}</h3></div>
+    <div class="author-text">
+       {% if instance.user.get_full_name %}
+        <I>Author: {{ instance.user.get_full_name }}</I>
+      {% endif %}
+    </div>
+    <div class="detail-content">{{ instance.content| linebreaks }}</div>
+    {% if request.user.is_superuser or  request.user.is_staff %}
+    <form name="update" action="{{ instance.get_url }}">
+      {% csrf_token %}
+      <button>Update</button>
+    </form>
+    <form name="delete" action="{{ instance.get_delete_url }}">
+      {% csrf_token %}
+      <button>Delete</button>
+    </form>
+    {% endif %}
+  </div>
+
+</div>
+{% endblock %}

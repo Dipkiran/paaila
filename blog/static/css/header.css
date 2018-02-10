@@ -1,0 +1,137 @@
+.logo{
+  height :60px;
+  width:100px;
+}
+
+.small .logo, .large.logo{
+  height :60px;
+  width:100px;
+  margin-left:20px;
+  transition: all 1s linear;
+}
+
+/*Start of styling for small header which takes effect after scroll*/
+.small, .large{
+  height: 10%;
+  box-shadow: 0 0px 14px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.7s ease;
+  background: rgba(255,255,255,1);
+}
+
+.small a, .large a{
+  font-size: 14px;
+  padding-top: 5px;
+  padding: 0px;
+  text-decoration: none;
+  color: #444;
+  transition: padding-top 0.5s ease;
+}
+
+.small:hover, .large:hover{
+    background: rgb(255,255,255);
+}
+
+.small li a:hover, .large li a:hover{
+  color: #888;
+  background: white;
+}
+
+.navbar-collapse{
+   transition: all 1s ease;
+}
+
+/*Full screen navigation bar*/
+.navbar-overlay{
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navbar-collapse-change{
+  position: absolute;
+  top: 70px;
+  left: 10vw;
+}
+/*End of Full screen navigation bar*/
+
+
+@media screen and (max-width: 980px) {
+
+  .navbar-header .container {
+    width: 96vw;
+  }
+
+    .navbar-brand{
+        margin-left: -36px;
+    }
+
+    .nav li a{
+        margin-left: -2px;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+
+  .large .logo{
+    height :80px;
+    width:131px;
+    margin-top:-5px;
+    transition: all 0.1s linear;
+  }
+
+  .large{
+    height: 70px;
+    background: rgb(255,255,255);
+    transition: height 0.5s ease;
+  }
+
+  /*Large Header*/
+  .large li a{
+    color: #444;
+    background: inherit;
+    padding-top: 20px;
+  }
+
+  .large li a:hover{
+    color:#888;
+    background: inherit;
+    border-bottom: 2px solid #55ACEE;
+  }
+  /*End of styling for large header*/
+
+  /*Start of styling for small header which takes effect after scroll*/
+  .small{
+    height: 55px;
+    box-shadow: 0 0px 14px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.7s ease;
+    background: rgb(255,255,255);
+  }
+
+  .small a{
+    font-size: 14px;
+    padding-top: 5px;
+    padding: 0px;
+    text-decoration: none;
+    color: #444;
+    transition: padding-top 0.5s ease;
+  }
+
+  .small:hover{
+    background: rgb(255,255,255);
+  }
+
+  .small .logo{
+    height :60px;
+    width:100px;
+    margin-left:20px;
+    transition: all 1s linear;
+  }
+
+  .small li a:hover{
+    color: #888;
+    border-bottom: 2px solid #55ACEE;
+    background: white;
+  }
+  /*End of styling for small header which takes effect after scroll*/
+
+}
